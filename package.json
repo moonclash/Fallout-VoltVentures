@@ -1,0 +1,28 @@
+{
+  "name": "fallout-voltventures",
+  "version": "1.0.0",
+  "description": "fan site for fallout game series",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello World\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/embrah/Fallout-VoltVentures.git"
+  },
+  "keywords": [
+    "fallout",
+    "game",
+    "site",
+    "fansite"
+  ],
+  "author": "Emil Mladenov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/embrah/Fallout-VoltVentures/issues"
+  },
+  "homepage": "https://github.com/embrah/Fallout-VoltVentures#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
