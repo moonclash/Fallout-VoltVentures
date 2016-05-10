@@ -1,6 +1,7 @@
 @import 'variables'
 @import 'typography'
 @import 'grid'
+@import 'elements'
 
 
 html,body
@@ -26,7 +27,7 @@ header
 
 	nav
 		width: 1
-		background: $black-500
+		background: transparentize($black-500,.1)
 		padding: 20px 0
 		position: fixed
 		top: 0
@@ -62,11 +63,28 @@ header
 	background-position: center center
 	background-attachment: fixed
 	img
-		margin: 0
+		margin: 0 0 18px 0
 		display: inline-block
 
 .intro
+	background: $yellow-300
 	padding: 50px 0
 	img
 		padding-right: 100px
 	
+.game-intro
+	background: url(../../images/brotherhood.jpg) center -20px  / cover no-repeat
+	box-shadow: (inset 0 0 0 1000px rgba(0,0,0,.5))
+
+	padding: 200px 0
+	h1
+		color: $white-500
+		font-size: 6rem
+		letter-spacing: 2px
+		text-transform: uppercase
+	p
+		color: $yellow-500
+		width: 50%
+		margin: 10px auto
+	a
+		@include btn-secondary($size-small,$yellow-500)
