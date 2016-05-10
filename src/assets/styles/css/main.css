@@ -314,6 +314,7 @@ header {
 
 .game-intro {
   background: url(../../images/brotherhood.jpg) center -20px/cover no-repeat;
+  background-attachment: fixed;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
   padding: 200px 0; }
   .game-intro h1 {
@@ -343,5 +344,31 @@ header {
       outline: none; }
     .game-intro a:hover {
       background: #FFC900;
+      color: #f6f6f6;
+      transition: .4s all; }
+
+.benefits {
+  padding: 100px 0; }
+  .benefits img[src$="boy.png"] + h3 {
+    padding-top: 80px; }
+  .benefits a {
+    border: none;
+    background: #090909;
+    color: #f6f6f6;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #090909;
+    color: #090909;
+    font-size: 1.8rem;
+    transition: .4s all;
+    text-align: center; }
+    .benefits a:focus {
+      outline: none; }
+    .benefits a:hover {
+      background: #090909;
       color: #f6f6f6;
       transition: .4s all; }

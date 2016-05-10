@@ -74,6 +74,7 @@ header
 	
 .game-intro
 	background: url(../../images/brotherhood.jpg) center -20px  / cover no-repeat
+	background-attachment: fixed
 	box-shadow: (inset 0 0 0 1000px rgba(0,0,0,.5))
 
 	padding: 200px 0
@@ -88,3 +89,11 @@ header
 		margin: 10px auto
 	a
 		@include btn-secondary($size-small,$yellow-500)
+
+.benefits
+	padding: 100px 0
+	img[src$="boy.png"] + h3
+		padding-top: 80px
+	a
+		@include btn-secondary($size-small,$black-500)
+		text-align: center
