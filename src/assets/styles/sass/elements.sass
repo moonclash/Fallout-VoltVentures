@@ -1,0 +1,41 @@
+@import variables
+
+
+//main button mixin for button elements
+
+@mixin btn-main ($size)
+	border: none
+	background: $black-500
+	color: $white-500
+	cursor: pointer
+	display: inline-block
+	font-size: $size
+	padding: 8px 12px
+	text-transform: uppercase
+	&:focus
+		outline: none
+
+//Secondary button mixin for links
+
+@mixin btn-secondary($size,$color)
+	@include btn-main($size)
+	background: transparent
+	border: 2px solid $color
+	color: $color
+	font-size: $size
+	transition: .4s all
+	&:hover
+		background: $color
+		color: $white-500
+		transition: .4s all
+
+button,btn-main
+	@include btn-main($size-small)
+
+.btn-secondary
+	@include btn-secondary($size-small,$black-500)
+	margin: 10px 15px
+
+
+.center
+	text-align: center
