@@ -1,3 +1,155 @@
+img {
+  max-width: 100%; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.row {
+  overflow: hidden; }
+
+.col-1 {
+  float: left;
+  width: 8.33333333%; }
+
+.col-2 {
+  float: left;
+  width: 16.66666666%; }
+
+.col-3 {
+  float: left;
+  width: 25%; }
+
+.col-4 {
+  float: left;
+  width: 33.33333333%; }
+
+.col-5 {
+  float: left;
+  width: 41.66666666%; }
+
+.col-6 {
+  float: left;
+  width: 50%; }
+
+.col-7 {
+  float: left;
+  width: 58.33333333%; }
+
+.col-8 {
+  float: left;
+  width: 66.66666666%; }
+
+.col-9 {
+  float: left;
+  width: 75%; }
+
+.col-10 {
+  float: left;
+  width: 83.33333333%; }
+
+.col-11 {
+  float: left;
+  width: 91.66666666%; }
+
+.col-12 {
+  float: left;
+  width: 100%; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: Bitter, serif; }
+
+h1, h2, h3 {
+  font-family: "Fugaz One", sans-serif; }
+
+a, button {
+  font-family: "Montserrat", serif; }
+
+h1 {
+  font-size: 3.8rem; }
+
+h2 {
+  font-size: 2.8rem; }
+
+h3 {
+  font-size: 2rem; }
+
+a, p {
+  font-size: 1.7rem; }
+
+p {
+  line-height: 1.3; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: none;
+  background: #090909;
+  color: #f6f6f6;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  overflow: hidden;
+  padding: 8px 12px;
+  text-transform: uppercase; }
+  button:focus {
+    outline: none; }
+
+button:hover span {
+  display: inline-block;
+  animation: .6s slide; }
+
+.btn-secondary {
+  border: none;
+  background: #090909;
+  color: #f6f6f6;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  overflow: hidden;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #090909;
+  color: #090909;
+  font-size: 1.8rem;
+  transition: .4s all;
+  margin: 10px 15px; }
+  .btn-secondary:focus {
+    outline: none; }
+  .btn-secondary:hover {
+    background: #090909;
+    color: #f6f6f6;
+    transition: .4s all; }
+
+.center {
+  text-align: center; }
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 201, 0, 0.2);
+  font-family: "Montserrat", serif;
+  font-size: 1.6rem;
+  color: #e5b400; }
+  input:focus {
+    outline: none; }
+
+@keyframes slide {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-50px); }
+  51% {
+    transform: translateY(50px); }
+  100% {
+    transform: translateY(0); } }
+
 html {
   font-size: 10px; }
 
@@ -87,17 +239,22 @@ img {
   float: left;
   width: 100%; }
 
-button, btn-main {
+button {
   border: none;
   background: #090909;
   color: #f6f6f6;
   cursor: pointer;
   display: inline-block;
   font-size: 1.8rem;
+  overflow: hidden;
   padding: 8px 12px;
   text-transform: uppercase; }
-  button:focus, btn-main:focus {
+  button:focus {
     outline: none; }
+
+button:hover span {
+  display: inline-block;
+  animation: .6s slide; }
 
 .btn-secondary {
   border: none;
@@ -106,6 +263,7 @@ button, btn-main {
   cursor: pointer;
   display: inline-block;
   font-size: 1.8rem;
+  overflow: hidden;
   padding: 8px 12px;
   text-transform: uppercase;
   background: transparent;
@@ -124,131 +282,25 @@ button, btn-main {
 .center {
   text-align: center; }
 
-html {
-  font-size: 10px; }
-
-body {
-  font-family: Bitter, serif; }
-
-h1, h2, h3 {
-  font-family: "Fugaz One", sans-serif; }
-
-a, button {
-  font-family: "Montserrat", serif; }
-
-h1 {
-  font-size: 3.8rem; }
-
-h2 {
-  font-size: 2.8rem; }
-
-h3 {
-  font-size: 2rem; }
-
-a, p {
-  font-size: 1.7rem; }
-
-p {
-  line-height: 1.3; }
-
-a {
-  text-decoration: none; }
-
-img {
-  max-width: 100%; }
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px; }
-
-.row {
-  overflow: hidden; }
-
-.col-1 {
-  float: left;
-  width: 8.33333333%; }
-
-.col-2 {
-  float: left;
-  width: 16.66666666%; }
-
-.col-3 {
-  float: left;
-  width: 25%; }
-
-.col-4 {
-  float: left;
-  width: 33.33333333%; }
-
-.col-5 {
-  float: left;
-  width: 41.66666666%; }
-
-.col-6 {
-  float: left;
-  width: 50%; }
-
-.col-7 {
-  float: left;
-  width: 58.33333333%; }
-
-.col-8 {
-  float: left;
-  width: 66.66666666%; }
-
-.col-9 {
-  float: left;
-  width: 75%; }
-
-.col-10 {
-  float: left;
-  width: 83.33333333%; }
-
-.col-11 {
-  float: left;
-  width: 91.66666666%; }
-
-.col-12 {
-  float: left;
-  width: 100%; }
-
-button, btn-main {
-  border: none;
-  background: #090909;
-  color: #f6f6f6;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.8rem;
-  padding: 8px 12px;
-  text-transform: uppercase; }
-  button:focus, btn-main:focus {
-    outline: none; }
-
-.btn-secondary {
-  border: none;
-  background: #090909;
-  color: #f6f6f6;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.8rem;
-  padding: 8px 12px;
-  text-transform: uppercase;
+input {
   background: transparent;
-  border: 2px solid #090909;
-  color: #090909;
-  font-size: 1.8rem;
-  transition: .4s all;
-  margin: 10px 15px; }
-  .btn-secondary:focus {
+  border: none;
+  border-bottom: 2px solid rgba(255, 201, 0, 0.2);
+  font-family: "Montserrat", serif;
+  font-size: 1.6rem;
+  color: #e5b400; }
+  input:focus {
     outline: none; }
-  .btn-secondary:hover {
-    background: #090909;
-    color: #f6f6f6;
-    transition: .4s all; }
 
-.center {
-  text-align: center; }
+@keyframes slide {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-50px); }
+  51% {
+    transform: translateY(50px); }
+  100% {
+    transform: translateY(0); } }
 
 html, body {
   background: #ECEBE8; }
@@ -333,6 +385,7 @@ header {
     cursor: pointer;
     display: inline-block;
     font-size: 1.8rem;
+    overflow: hidden;
     padding: 8px 12px;
     text-transform: uppercase;
     background: transparent;
@@ -351,24 +404,16 @@ header {
   padding: 100px 0; }
   .benefits img[src$="boy.png"] + h3 {
     padding-top: 80px; }
-  .benefits a {
-    border: none;
-    background: #090909;
-    color: #f6f6f6;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1.8rem;
-    padding: 8px 12px;
-    text-transform: uppercase;
-    background: transparent;
-    border: 2px solid #090909;
-    color: #090909;
-    font-size: 1.8rem;
-    transition: .4s all;
-    text-align: center; }
-    .benefits a:focus {
-      outline: none; }
-    .benefits a:hover {
-      background: #090909;
-      color: #f6f6f6;
-      transition: .4s all; }
+
+.register {
+  color: #E9D86A;
+  padding: 100px;
+  background: url(../../images/plane.jpg) center -20px/cover no-repeat fixed; }
+  .register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .register form input {
+      margin: 5px 0; }
+    .register form button {
+      font-size: 1.5rem; }
