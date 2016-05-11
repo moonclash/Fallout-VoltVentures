@@ -407,7 +407,7 @@ header {
 
 .register {
   color: #E9D86A;
-  padding: 100px;
+  padding: 170px;
   background: url(../../images/plane.jpg) center -20px/cover no-repeat fixed; }
   .register form {
     display: flex;
@@ -416,4 +416,47 @@ header {
     .register form input {
       margin: 5px 0; }
     .register form button {
+      margin-top: 26px;
+      background-color: rgba(158, 125, 0, 0.5);
+      border-radius: 5px;
       font-size: 1.5rem; }
+
+.advertisement {
+  background: url(../../images/standby.jpg) center 100px/cover no-repeat fixed;
+  padding: 200px; }
+  .advertisement video {
+    float: left;
+    width: 95%;
+    border: 5px solid #FFC900; }
+  .advertisement .vault-info {
+    text-align: center;
+    float: right;
+    color: #090909;
+    text-shadow: 2px 4px 0 #FFC900; }
+    .advertisement .vault-info h1:after {
+      content: "";
+      display: block;
+      width: 6rem;
+      height: 0.2rem;
+      background: #E9D86A;
+      margin: 5px auto; }
+    .advertisement .vault-info h2 {
+      text-shadow: 1px 1px 0 #FFC900; }
+    .advertisement .vault-info img {
+      width: 25%; }
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #090909;
+  color: #E9D86A; }
+  footer .social-media {
+    font-size: 3rem; }
+    footer .social-media i {
+      cursor: pointer;
+      padding-right: 10px; }
+
+.copyright {
+  text-transform: uppercase; }
+  .copyright p:first-child {
+    font-size: .8em; }
