@@ -50,6 +50,9 @@ header
 			a
 				color: $white-500
 				text-transform: uppercase
+				transition: .3s color linear 
+				&:hover
+					color: $yellow-500
 	.hero
 		padding: 400px 0
 
@@ -157,3 +160,30 @@ footer
 
 
 	
+@media all and (max-width: 690px)
+	header
+		text-align: center
+		ul
+			float: none
+			li
+				display: block
+				padding: 10px 0
+	.benefits
+		img
+			display: none
+		img[src$="boy.png"] + h3
+			padding: 0
+	.register
+		h1,h2
+			font-size: 2rem
+	.advertisement
+		padding: 100px 0
+		.col-6
+			width: 100%
+		.video-hidden
+			display: none
+		img
+			display: none
+		.vault-info
+			float: none
+

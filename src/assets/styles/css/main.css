@@ -343,7 +343,10 @@ header {
       padding: 0 8px; }
       header ul li a {
         color: #f6f6f6;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        transition: .3s color linear; }
+        header ul li a:hover {
+          color: #FFC900; }
   header .hero {
     padding: 400px 0; }
 
@@ -460,3 +463,28 @@ footer {
   text-transform: uppercase; }
   .copyright p:first-child {
     font-size: .8em; }
+
+@media all and (max-width: 690px) {
+  header {
+    text-align: center; }
+    header ul {
+      float: none; }
+      header ul li {
+        display: block;
+        padding: 10px 0; }
+  .benefits img {
+    display: none; }
+  .benefits img[src$="boy.png"] + h3 {
+    padding: 0; }
+  .register h1, .register h2 {
+    font-size: 2rem; }
+  .advertisement {
+    padding: 100px 0; }
+    .advertisement .col-6 {
+      width: 100%; }
+    .advertisement .video-hidden {
+      display: none; }
+    .advertisement img {
+      display: none; }
+    .advertisement .vault-info {
+      float: none; } }
