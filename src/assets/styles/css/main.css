@@ -467,6 +467,8 @@ footer {
 @media all and (max-width: 690px) {
   header {
     text-align: center; }
+    header nav {
+      position: relative; }
     header ul {
       float: none; }
       header ul li {
